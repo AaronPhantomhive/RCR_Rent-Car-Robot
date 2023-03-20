@@ -1,0 +1,670 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-position: static;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+
+div {
+  word-wrap: break-word;
+  line-height: 1.25rem;
+}
+
+/*回到顶部*/
+#btnTop{
+	background: #AB72F8;
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;/*设置文本的对其方式*/
+	line-height: 50px;/*设置行高*/
+	position: fixed;/*设置定位方式固定*/
+	bottom: 0;
+	right: 0;
+	opacity:0.5;
+	border-radius:50%;
+	top: 44.3125rem;
+	right: 1.3125rem;
+}
+/*
+/*头部*/
+.head{
+	width: 100%;
+	height: 92px;
+	background-image: url(../images/head_bg.jpg);
+}
+/*头部居中*/
+.head .head_center{
+	/*将盒子居中*/
+	margin: 0 auto;
+	width: 1200px;
+	height: 92px;
+}
+/*头部的logo*/
+.head .head_center .h_logo{
+	height:92px;
+	float: left;
+	position: absolute;
+}
+.head .head_center .h_logo .logo{
+	/*logo图距离上面有25px*/
+	margin-top: 25px ;
+}
+.head .head_center .h_logo .h_text1{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #ebe9ee;
+	position: center;
+	top: 40px;
+	left:44px
+}
+/*头部的login*/
+.head .head_center .h_login{
+	width:300px;
+	height:92px;
+	float: right;
+	border-left: 1px soild #363f66 ;
+}
+.head .head_center .h_login .h_text{
+	font-family: "宋体";
+	color: #d9dfdf;
+	float: left;
+	margin-top: 35px;
+}
+.head .head_center .h_login .h_text2{
+	margin-left:1px ;
+}
+.head .head_center .h_login .h_text3{
+	margin-left:10px ;
+	color: #aa3b50;
+}
+.head .head_center .h_login .h_text4{
+	margin-left:5px ;
+}
+.head .head_center .h_login .h_text5{
+	display: none;
+	margin-left:5px;
+}
+/*头像*/
+.head .head_center .h_login .h_pic1{
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	float: left;
+	margin-top : 20px;
+}
+/*头部的icon*/
+.head .head_center .h_icon{
+	width: 115px;
+	height: 92px;
+	float: right;
+	position: relative;
+}
+.head .head_center .h_icon .h_icon1{
+	display: block;	
+	float: left;
+	width:25px;
+	height: 25px;
+	background-image: url(../images/person11.png);
+	background-size: 25px;
+	margin-top: 35px;
+	margin-right:10px ;
+	transition: background .5s;/*过渡：一个动作两个状态的变换*/
+}
+.head .head_center .h_icon .h_icon1:hover{/*：hover 鼠标移入时的状态*/
+	background-image: url(../images/person12.png);
+}
+.head .head_center .h_icon .h_icon2{
+	display: block;	
+	float: left;
+	width:25px;
+	height: 25px;
+	background-image: url(../images/email11.png);
+	background-size: 25px;
+	margin-top: 35px;
+	margin-right: 10px;
+	transition: background .5s;
+}
+.head .head_center .h_icon .h_icon2:hover{
+	background-image:url(../images/email12.png);
+}
+.head .head_center .h_icon .h_icon3{
+	display: block;	
+	float: left;
+	width:25px;
+	height: 25px;
+	background-image: url(../images/house11.png);
+	background-size: 25px;
+	margin-top: 35px;
+	transition: background .5s;
+}
+.head .head_center .h_icon .h_icon3:hover{
+	background-image: url(../images/house12.png);
+}
+.head .head_center .h_icon .h_sign{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background:#d33045;
+	position: absolute;
+	/*absolute 定位方式是：针对网页原点定位，
+	 当父容器也进行容器就针对*/
+	left: 54px;
+	top: 32px;
+	font-size :12px;
+	text-align: center;
+	line-height: 15px;
+	color:#ffc9e7;
+	border-radius:20% ;/*圆角  当一个圆角大于等于当前的50%时，就是圆形*/	
+}
+
+*/
+
+/*导航条*/
+.nav{
+	height: 82px;
+	width: 100%;
+	background: url(../images/zt_bg.jpg);
+}
+.nav .nav_center{
+	width: 1200px;
+	height: 82px;
+	margin: 0 auto;
+}
+/*nav中的内容*/
+.nav .nav_center .nav_context{
+	height: 82px;
+	width:850px;
+	float: left;
+}
+.nav .nav_center .nav_context a{
+		display: block;
+		height: 82px;
+		line-height: 82px;
+		float: left;
+		margin-right:60px;
+		color: #b9c3df;
+		transition: color .5s,text-shadow 1s;
+}
+.nav .nav_center .nav_context a:hover{
+	color: #1e8298;
+	text-shadow: 0 0 10px #1E8298;/*坐标 坐标 模糊度 阴影颜色*/
+}
+.nav .nav_center .nav_context button:hover{
+	color: #1e8298;
+	text-shadow: 0 0 10px #1E8298;/*坐标 坐标 模糊度 阴影颜色*/
+}
+/*nav中的表单*/
+.nav .nav_center .nav_form{
+	height: 41px;
+	width: 260px;
+	float: right;
+	background:#10182d ;
+	margin-top:20px ;
+}
+.nav .nav_center .nav_form form input{
+	/*盒子的真实大小为：内容+border+padding*/
+	width: 210px;
+	height: 50px;
+	outline: none;/*外边线*/
+	background: none;
+	color: #3f568a;
+	padding-left:20px ;
+	border: none;
+	display: block;
+	float: left;
+}
+/*放大镜*/
+.nav .nav_center .nav_form .n_img{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: right;
+	margin-top:-4px ;
+	margin-right: 10px;
+}
+.banner .banner{
+	width: 100%;
+	height: 800px;
+}
+
+.back{
+    position: absolute;  
+	top: 0;
+	left: 0.3rem;
+	background:url("../images/left.png") no-repeat;
+    width: 0.2rem;
+    height:0.4rem;
+    margin-top: 0.34rem;
+    background-size: 0.2rem 0.4rem;
+}
+.tit{/*---------------------------------------------------------------------------*/
+	max-width: 25rem;
+	min-width: 9.375rem;
+    /*max-width: 720px;*/
+    margin:auto;
+    background: #a7e3ff; // 改一下颜色
+    color:#333;
+    vertical-align: middle;
+    text-align: center;
+    height: 2rem;
+    line-height: 1.9rem;
+    opacity: 0.5;
+}
+
+/*---------------------------------呼吸灯------------------------------------------
+.breath{
+	width:500px;
+	height:315px;
+	position:relative;
+	margin-top: 150px;
+	margin-left: 200px;
+	border-radius: 50%;
+	}
+
+	*/
+	
+.breath{
+		/*display: block;*/
+		width: 350px;
+		height: 300px;
+		/*text-align: center;设置文本的对其方式*/
+		/*line-height: 100px;设置行高*/
+		border-radius: 50%;
+		/*bottom: 100;
+		right: 100;*/
+		/*opacity: 1;*/
+		/*overflow:hidden;*/
+		position: absolute;
+		margin-top: 280px;
+		margin-left: 470px;
+}
+.breath2{width:500px;height:315px;position:absolute;}
+.breath2{-webkit-animation:breath 3s infinite ease-in-out alternate;animation:breath 3s infinite ease-in-out alternate}
+@-webkit-keyframes breath{
+    0%{opacity:.2}
+    70%{opacity:1}
+    to{opacity:.2}
+}
+@keyframes breath{
+    0%{opacity:.2}
+    70%{opacity:1}
+    to{opacity:.2}
+}
+
+
+// 以下为原来的
+
+.disclaimer {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  top: 0.3125rem;
+}
+
+
+#view-change-button {
+  display: inline-block;
+  position: absolute;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 1.5625rem;
+  background: #AB72F8;
+  top: 40.3125rem;
+  right: 1.3125rem;
+  line-height: 3.125rem;
+  vertical-align: middle;
+}
+
+#view-change-button img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#view-change-button:not(.full) .not-full {
+  display: inline-block;
+}
+
+#view-change-button.full .full {
+  display: inline-block;
+}
+
+#contentParent {
+  height: 100%;
+}
+
+.responsive-columns-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -ms-display: flex;
+  -ms-flex-direction: row;
+}
+
+.responsive-column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+}
+
+#chat-column-holder {
+  text-align: center;
+}
+
+.chat-column {/*-----------------------------------------------------------------------*/
+  height: 85%;
+  padding: 0.9375rem 0 0.625rem 0;
+  margin: auto;
+  text-align: left;
+  max-width: 25rem;
+  min-width: 9.375rem;
+  max-height: 35rem;
+  /*background: #f1f1f1;*/
+}
+
+.user-typing {
+  border: none;
+  color: #8d25e8;
+  margin: 0.75rem;
+  font-size: 15;
+  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#scrollingChat {
+  margin: 0.75rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 4rem);
+}
+
+.message-inner {
+  opacity: 0;
+  margin-top: 0.9375rem;
+  -webkit-transition-property: opacity, margin-top;
+  -webkit-transition-duration: 0.75s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-property: opacity, margin-top;
+  -moz-transition-duration: 0.75s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-property: opacity, margin-top;
+  -o-transition-duration: 0.75s;
+  -o-transition-timing-function: ease-in;
+  -ms-transition-property: opacity, margin-top;
+  -ms-transition-duration: 0.75s;
+  -ms-transition-timing-function: ease-in;
+  transition-property: opacity, margin-top;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in;
+}
+
+.load .message-inner {
+  opacity: 1;
+  margin-top: 0.3125rem;
+}
+
+.from-user {
+  text-align: right;
+}
+
+.from-user .message-inner {
+  position: relative;
+  font-size: 1rem;
+  color: #696969;
+  letter-spacing: 0.015rem;
+  line-height: 1.3125rem;
+  background: #f1f1f1;
+  border-radius: 1.25rem;
+  border-bottom-right-radius: 0;
+  text-align: left;
+  display: inline-block;
+  margin-left: 2.5rem;
+  min-width: 2.5rem;
+}
+
+.from-user .message-inner p {
+  margin: 0.3125rem;
+  padding: 0 0.9375rem;
+}
+
+.from-user .message-inner:before, .from-user .message-inner:after {
+  content: "";
+  position: absolute;
+}
+
+
+.from-user .message-inner:before {
+  z-index: -2;
+  bottom: -0.375rem;
+  right: 0;
+  height: 0.375rem;
+  width: 0.5rem;
+}
+
+.from-user .message-inner:after {
+  z-index: -1;
+  bottom: -0.5rem;
+  right: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.from-watson, 
+.message-inner {
+  position: relative;
+  border-radius: 1.5625rem;
+  font-size: 1rem;
+  color: #ccc1fa; /* 前一个会话 */
+  letter-spacing: 0.015rem;
+  line-height: 1.3125rem;
+}
+
+.from-watson.latest .message-inner {
+  color: #f1f1f1;
+}
+
+.from-watson p {
+  margin: 0.3125rem;
+  padding: 0 1.25rem;
+}
+
+.from-watson.latest.top p:before {
+  content: ".";
+  color: #9855D4;
+  background-image: url("/images/marker_image.png");
+  background-size: 0.3125rem 1.3125rem;
+  position: absolute;
+  z-index: 2;
+  left: 0.4375rem;
+  width: 0.3125rem;
+  height: 1.3125rem;
+  line-height: 1.3125rem;
+}
+
+#textInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #f1f1f1;
+  letter-spacing: 0.015rem;
+  line-height: 1.3125rem;
+  height: 2.5rem;
+  max-width: 100%;
+  padding-left: 0.125rem;
+  margin-bottom: -0.125rem;
+  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+#textInput.underline {
+  border-bottom: 2px solid #00B4A0;
+}
+
+::-webkit-input-placeholder {
+  color: #B5B5B5;
+}
+
+::-moz-placeholder {
+  color: #B5B5B5;
+  opacity:  1;
+}
+
+input:-moz-placeholder {
+  color: #B5B5B5;
+  opacity:  1;
+}
+
+:-ms-input-placeholder {
+  color: #B5B5B5;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+.inputOutline {
+  display: block;
+  border-bottom: 0.0625rem solid #0008ff;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#textInputDummy {
+  position:absolute;
+  white-space:pre;
+  top: 0;
+  left: -1000%;
+  opacity: 0;
+}
+
+#payload-column {
+  font-family: Monaco, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 1.125rem;
+  color: #fff;
+  overflow-x: auto;
+
+/*
+  width: 45%;
+  max-width: 32.0625rem;
+  min-width: 29.6875rem;                 这个部分具体要改，是右边代码的大小
+  */
+  max-width: 0rem;
+  min-width: 0rem;
+}
+
+#payload-column.full {
+  width: 100%;
+  max-width: 33rem;
+  min-width: 29rem;
+}
+/*
+#payload-column .header-text, #payload-column #payload-initial-message {
+  font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  color: #9E9E9E;
+  letter-spacing: 0.01875rem;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  background: #383D3E;
+}
+*/
+.hide {
+  display: none;
+}
+
+.payload .line-numbers, .payload .payload-text {
+  padding: 0.5rem;
+}
+
+.line-numbers {
+  width: 2rem;
+  color: #898989;
+  text-align: right;
+}
+
+pre {
+  margin: 0;
+  word-wrap: normal;
+}
+
+.string {
+  color: #54EED0;
+}
+
+.boolean, .null, .number {
+  color: #CE8EFF;
+}
+
+.key {
+  color: #66B7FF;
+}
+
+html{
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .chat-column {
+    padding-top: 4rem;
+  }
+
+  #payload-column {
+    width: 0;
+    max-width: none;
+    min-width: initial;
+  }
+}
+
+/* IBM Design fonts https://github.ibm.com/Design/fonts */
+@font-face {
+  font-family: 'Helvetica Neue for IBM';
+  src: url('/fonts/roman/h-n-roman.eot?') format('eot'),
+  url('/fonts/roman/h-n-roman.woff2') format('woff2'),
+  url('/fonts/roman/h-n-roman.woff') format('woff'),
+  url('/fonts/roman/h-n-roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.options-list {
+  color: #70e9ed;
+  cursor: pointer;
+}
+
+.options-button {
+  color: white;
+  background-color: #8d25e8;
+  border-radius: 6px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 3px;
+  cursor: pointer;
+  display: inline-block;
+}

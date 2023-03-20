@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: WatsonAssistantBasicBird4Real
+  buildpack: java_buildpack
+  path: ./target/WatsonAssistantBasicBird4Real-1.0-SNAPSHOT.jar
+  memory: 1024M
+  domain: not-used.net
+  host: not-used
+  services:
+    - watson-assistant-bas-conversation-1564386706474

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "watson_assistant_apikey": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:apikey",
+      "cloudfoundry:$['conversation'][0].credentials.apikey",
+      "env:service_watson_assistant:$.apikey",
+      "env:watson_assistant_apikey",
+      "file:/server/localdev-config.json:$.watson_assistant_apikey"
+    ]
+  },
+  "watson_assistant": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided:watson-assistant-bas-conversation-1564386706474:url",
+        "cloudfoundry:watson_assistant",
+        "env:watson_assistant_credentials",
+        "file:/server/localdev-config.json:watson_assistant_credentials"
+      ]
+    }
+  },
+  "watson_assistant_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_apikey_description",
+      "cloudfoundry:$['conversation'][0].credentials.iam_apikey_description",
+      "env:service_watson_assistant:$.iam_apikey_description",
+      "env:watson_assistant_iam_apikey_description",
+      "file:/server/localdev-config.json:$.watson_assistant_iam_apikey_description"
+    ]
+  },
+  "watson_assistant_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_apikey_name",
+      "cloudfoundry:$['conversation'][0].credentials.iam_apikey_name",
+      "env:service_watson_assistant:$.iam_apikey_name",
+      "env:watson_assistant_iam_apikey_name",
+      "file:/server/localdev-config.json:$.watson_assistant_iam_apikey_name"
+    ]
+  },
+  "watson_assistant_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_role_crn",
+      "cloudfoundry:$['conversation'][0].credentials.iam_role_crn",
+      "env:service_watson_assistant:$.iam_role_crn",
+      "env:watson_assistant_iam_role_crn",
+      "file:/server/localdev-config.json:$.watson_assistant_iam_role_crn"
+    ]
+  },
+  "watson_assistant_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_serviceid_crn",
+      "cloudfoundry:$['conversation'][0].credentials.iam_serviceid_crn",
+      "env:service_watson_assistant:$.iam_serviceid_crn",
+      "env:watson_assistant_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.watson_assistant_iam_serviceid_crn"
+    ]
+  },
+  "watson_assistant_url": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:url",
+      "cloudfoundry:$['conversation'][0].credentials.url",
+      "env:service_watson_assistant:$.url",
+      "env:watson_assistant_url",
+      "file:/server/localdev-config.json:$.watson_assistant_url"
+    ]
+  },
+  "watson_conversation_apikey": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:apikey",
+      "cloudfoundry:$['conversation'][0].credentials.apikey",
+      "env:service_watson_conversation:$.apikey",
+      "env:watson_conversation_apikey",
+      "file:/server/localdev-config.json:$.watson_conversation_apikey"
+    ]
+  },
+  "watson_conversation": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided:watson-assistant-bas-conversation-1564386706474:url",
+        "cloudfoundry:watson_conversation",
+        "env:watson_conversation_credentials",
+        "file:/server/localdev-config.json:watson_conversation_credentials"
+      ]
+    }
+  },
+  "watson_conversation_iam_apikey_description": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_apikey_description",
+      "cloudfoundry:$['conversation'][0].credentials.iam_apikey_description",
+      "env:service_watson_conversation:$.iam_apikey_description",
+      "env:watson_conversation_iam_apikey_description",
+      "file:/server/localdev-config.json:$.watson_conversation_iam_apikey_description"
+    ]
+  },
+  "watson_conversation_iam_apikey_name": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_apikey_name",
+      "cloudfoundry:$['conversation'][0].credentials.iam_apikey_name",
+      "env:service_watson_conversation:$.iam_apikey_name",
+      "env:watson_conversation_iam_apikey_name",
+      "file:/server/localdev-config.json:$.watson_conversation_iam_apikey_name"
+    ]
+  },
+  "watson_conversation_iam_role_crn": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_role_crn",
+      "cloudfoundry:$['conversation'][0].credentials.iam_role_crn",
+      "env:service_watson_conversation:$.iam_role_crn",
+      "env:watson_conversation_iam_role_crn",
+      "file:/server/localdev-config.json:$.watson_conversation_iam_role_crn"
+    ]
+  },
+  "watson_conversation_iam_serviceid_crn": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:iam_serviceid_crn",
+      "cloudfoundry:$['conversation'][0].credentials.iam_serviceid_crn",
+      "env:service_watson_conversation:$.iam_serviceid_crn",
+      "env:watson_conversation_iam_serviceid_crn",
+      "file:/server/localdev-config.json:$.watson_conversation_iam_serviceid_crn"
+    ]
+  },
+  "watson_conversation_url": {
+    "searchPatterns": [
+      "user-provided:watson-assistant-bas-conversation-1564386706474:url",
+      "cloudfoundry:$['conversation'][0].credentials.url",
+      "env:service_watson_conversation:$.url",
+      "env:watson_conversation_url",
+      "file:/server/localdev-config.json:$.watson_conversation_url"
+    ]
+  }
+}
